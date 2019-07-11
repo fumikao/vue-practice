@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1>いざ勝負！</h1>
     <h2>じゃんけん...</h2>
     <div class="choose">
       <ul>
