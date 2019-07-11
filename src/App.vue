@@ -25,4 +25,9 @@ export default {
 li {
   list-style: none;
 }
+
+.container {
+  margin: 50px;
+}
+
 </style>
