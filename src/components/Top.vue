@@ -7,7 +7,7 @@
     </div>
     <div class="project">
       <router-link to="/janken">じゃんけんゲーム</router-link></li>
-      <p>手を選ぶと勝ち負けが表示されます</p>
+      <p>手を選ぶとコンピュータとじゃんけんできます</p>
     </div>
     <div class="project">
       <router-link to="/bitcoin">Bitcoin価格一覧</router-link></li>
