@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <div>
-      Vue.jsの練習
-    </div>
+    <h1>Vue.jsの練習作品集</h1>
+    <router-link to="/">Home</router-link>
     <router-view/>
   </div>
 </template>
@@ -20,6 +19,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
 }
 </style>
