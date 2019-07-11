@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <div>
+      Vue.jsの練習
+    </div>
     <router-view/>
   </div>
 </template>
