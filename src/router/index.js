@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Top from '@/components/Top'
 import YearConverter from '@/components/YearConverter'
 import Janken from '@/components/Janken'
+import Bitcoin from '@/components/Bitcoin'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/janken',
       name: 'Janken',
       component: Janken
+    },
+    {
+      path: '/bitcoin',
+      name: 'Bitcoin',
+      component: Bitcoin
     }
   ]
 })
