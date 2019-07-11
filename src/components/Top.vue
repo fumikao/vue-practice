@@ -2,7 +2,7 @@
   <div>
     <p>Vue.jsに慣れるためにいろいろと作ってみました。</p>
     <ul>
-      <li><router-link to="/YearConverter">YearConverter</router-link></li>
+      <li><router-link to="/year-converter">YearConverter</router-link></li>
       <li><router-link to="/Janken">Janken</router-link></li>
     </ul>
   </div>
