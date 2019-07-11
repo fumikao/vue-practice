@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <h1>Vue.jsの練習作品集</h1>
-    <router-link to="/">Home</router-link>
+    <router-link to="/">
+      <font-awesome-icon :icon="['fas', 'home']" /> HOME
+    </router-link>
     <transition name="fade">
       <router-view/>
     </transition>
@@ -32,6 +34,10 @@ export default {
 }
 .fade-enter, .fade-leave-to {
   opacity: 0
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
