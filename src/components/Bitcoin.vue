@@ -58,5 +58,8 @@ export default {
 table {
   width: 50%;
   margin: 0 auto;
+  th {
+    text-align: right;
+  }
 }
 </style>
