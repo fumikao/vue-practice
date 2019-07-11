@@ -2,6 +2,7 @@
   <div class="container">
     <h2>じゃんけん...</h2>
     <div class="choose">
+      <p>手を選んでクリック！</p>
       <ul>
         <li><font-awesome-icon :icon="['far', 'hand-rock']" @click="fight('goo')" /></li>
         <li><font-awesome-icon :icon="['far', 'hand-peace']" @click="fight('choki')" /></li>
@@ -81,7 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 ul {
@@ -91,7 +92,7 @@ ul {
 }
 
 li {
-  margin: 10px;
+  margin: 0 10px;
   font-size: 5em;
   cursor: pointer;
   &:hover {
