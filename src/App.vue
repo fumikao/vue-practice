@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Vue.jsの練習作品集</h1>
-    <router-link to="/">
+    <router-link to="/" class="top-link">
       <font-awesome-icon :icon="['fas', 'home']" /> HOME
     </router-link>
     <transition name="fade">
@@ -38,6 +38,17 @@ export default {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.top-link {
+  background:  #4fc08d;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
 }
 
 li {

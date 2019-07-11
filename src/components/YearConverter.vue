@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>西暦→和暦 変換システム</h2>
+    <h2>西暦→和暦システム</h2>
       <div class="table">
         <p><input type="number" v-model="year" name="year" id="year">年は...</p>
         <table>
