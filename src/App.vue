@@ -7,7 +7,7 @@
         <font-awesome-icon :icon="['fas', 'home']" />
       </v-btn>
     </router-link>
-    <v-menu>
+    <v-menu offset-y>
       <template v-slot:activator="{ on }">
         <v-btn fab color="#4fc08d" dark v-on="on">
           <font-awesome-icon :icon="['fas', 'list']" />
@@ -17,7 +17,6 @@
         <v-list-tile
           v-for="(item, i) in items"
           :key="i"
-          @click=""
         >
           <v-list-tile-title><router-link :to="item.link">{{ item.title }}</router-link></v-list-tile-title>
         </v-list-tile>
