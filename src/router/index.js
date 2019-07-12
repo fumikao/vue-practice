@@ -30,6 +30,11 @@ export default new Router({
       path: '/bitcoin',
       name: 'Bitcoin',
       component: Bitcoin
+    },
+    {
+      path: '/qiita',
+      name: 'Qiita',
+      component: Qiita
     }
   ]
 })
