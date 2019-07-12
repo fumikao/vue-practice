@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "fumika-vuejs-practice",
+    "default": "fumika-vuejs-practice"
+  }
+}
