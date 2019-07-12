@@ -41,7 +41,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p {
+  margin-top: 20px;
+}
 input {
+  margin-right: 5px;
   padding: 5px;
   border: solid 1px #ccc;
 }
