@@ -9,14 +9,15 @@
     </p>
     <ul>
       <li v-for="item in items">
-        <!-- {{ item.title }} -->
-        <a :href="item.url" target="_blank">{{ item.title }}</a> likes:{{ item.likes_count }}
+        <a :href="item.url" target="_blank">{{ item.title }}<font-awesome-icon :icon="['far', 'thumbs-up']" />{{ item.likes_count }}</a>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import _ from 'lodash'
+const axios = require('axios');
 export default {
   data () {
     return {
@@ -31,9 +32,9 @@ export default {
       this.debouncedGetAnswer()
     }
   },
-  // created: function(){
-  //   this.debouncedGetAnswer = debounce(this.getAnswer, 1000)
-  // },
+  created: function(){
+    this.debouncedGetAnswer = _.debounce(this.getAnswer, 1000)
+  },
   methods: {
     getAnswer: function(){
       if(this.keyword === ''){
@@ -46,7 +47,6 @@ export default {
       var params = { page: 1, per_page: 20, query: this.keyword }
       axios.get('https://qiita.com/api/v2/items', { params })
       .then(function(response){
-        console.log(response)
         vm.items = response.data
       })
       .catch(function(error){
@@ -61,5 +61,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+li {
+  list-style: square;
+  text-align: left;
+  padding: 5px;
+  a {
+    color: #4fc08d;
+  }
+}
 </style>
