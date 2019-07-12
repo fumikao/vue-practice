@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Qiita記事検索</h2>
     <p>
-      <input type="text" v-model="keyword">
+      <input type="text" v-model="keyword" placeholder="keyword">
     </p>
     <p>
       {{ message }}
