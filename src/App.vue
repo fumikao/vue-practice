@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Vue.jsの練習作品集</h1>
+    <clock />
     <router-link to="/" class="top-link">
       <font-awesome-icon :icon="['fas', 'home']" /> HOME
     </router-link>
@@ -11,8 +12,12 @@
 </template>
 
 <script>
+import Clock from '@/components/Clock'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    clock: Clock
+  }
 }
 </script>
 
@@ -23,7 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .fade-enter-active {
@@ -56,7 +61,7 @@ li {
 }
 
 .container {
-  margin: 50px;
+  margin: 40px;
 }
 
 </style>
