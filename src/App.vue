@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Vue.jsの練習作品集</h1>
+    <h1>Vue.js Practice</h1>
     <clock />
     <router-link to="/" class="top-link">
       <v-btn fab color="#4fc08d" dark v-on="on">
