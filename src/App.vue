@@ -3,8 +3,26 @@
     <h1>Vue.jsの練習作品集</h1>
     <clock />
     <router-link to="/" class="top-link">
-      <font-awesome-icon :icon="['fas', 'home']" /> HOME
+      <v-btn fab color="#4fc08d" dark v-on="on">
+        <font-awesome-icon :icon="['fas', 'home']" />
+      </v-btn>
     </router-link>
+    <v-menu>
+      <template v-slot:activator="{ on }">
+        <v-btn fab color="#4fc08d" dark v-on="on">
+          <font-awesome-icon :icon="['fas', 'list']" />
+        </v-btn>
+      </template>
+      <v-list>
+        <v-list-tile
+          v-for="(item, i) in items"
+          :key="i"
+          @click=""
+        >
+          <v-list-tile-title><router-link :to="item.link">{{ item.title }}</router-link></v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
     <transition name="fade">
       <router-view/>
     </transition>
@@ -17,7 +35,15 @@ export default {
   name: 'App',
   components: {
     clock: Clock
-  }
+  },
+  data: () => ({
+    items: [
+      { title: '西暦', link: '/year-converter' },
+      { title: 'じゃんけん', link: '/janken' },
+      { title: 'Qiita', link: '/qiita' },
+      { title: 'Bitcoin', link: '/bitcoin' }
+    ]
+  })
 }
 </script>
 
@@ -49,15 +75,12 @@ a:hover {
   opacity: 0.5;
 }
 
-.top-link {
-  background:  #4fc08d;
-  color: #fff;
-  border-radius: 30px;
-  padding: 10px;
-}
-
 li {
   list-style: none;
+}
+
+.v-btn__content {
+  font-size: 1.5em;
 }
 
 .container {
