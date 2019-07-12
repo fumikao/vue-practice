@@ -11,17 +11,17 @@
     </div>
     <div class="result">
       <div class="hand">
-        <p>{{ myHandLabel }}</p>
         <font-awesome-icon :icon="['far', 'hand-rock']" v-if="myHand === 'goo'" />
         <font-awesome-icon :icon="['far', 'hand-peace']" v-if="myHand === 'choki'" />
         <font-awesome-icon :icon="['far', 'hand-paper']" v-if="myHand === 'paa'" />
+        <p>{{ myHandLabel }}</p>
       </div>
       <h2>{{ result }}</h2>
       <div class="hand">
-        <p>{{ enemyHandLabel }}</p>
         <font-awesome-icon :icon="['far', 'hand-rock']" v-if="enemyHand === 'goo'" />
         <font-awesome-icon :icon="['far', 'hand-peace']" v-if="enemyHand === 'choki'" />
         <font-awesome-icon :icon="['far', 'hand-paper']" v-if="enemyHand === 'paa'" />
+        <p>{{ enemyHandLabel }}</p>
       </div>
     </div>
   </div>
@@ -88,6 +88,7 @@ p {
 ul {
   display: flex;
   justify-content: center;
+  font-size: 0.5em;
   padding: 0;
 }
 
@@ -101,6 +102,7 @@ li {
 }
 
 .result {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
