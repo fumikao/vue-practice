@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h2>Vue.jsに慣れるために作ってみました。</h2>
     <div class="project">
       <router-link to="/year-converter">西暦→和暦システム</router-link></li>
       <p>西暦を入力すると和暦に変換されます</p>
@@ -12,6 +11,10 @@
     <div class="project">
       <router-link to="/bitcoin">Bitcoin価格一覧</router-link></li>
       <p>APIを使ってBitcoinの値段を取得しています</p>
+    </div>
+    <div class="project">
+      <router-link to="/qiita">Qiita記事検索</router-link></li>
+      <p>Qiitaの記事をタイトルで検索できます</p>
     </div>
   </div>
 </template>

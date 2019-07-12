@@ -4,6 +4,7 @@ import Top from '@/components/Top'
 import YearConverter from '@/components/YearConverter'
 import Janken from '@/components/Janken'
 import Bitcoin from '@/components/Bitcoin'
+import Qiita from '@/components/Qiita'
 
 Vue.use(Router)
 
