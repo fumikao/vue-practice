@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+input {
+  padding: 5px;
+  border: solid 1px #ccc;
+}
 .table {
   width: 50%;
   margin: 0 auto;

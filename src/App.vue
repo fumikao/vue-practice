@@ -49,11 +49,6 @@ a:hover {
   opacity: 0.5;
 }
 
-input {
-  padding: 5px;
-  border: solid 1px #ccc;
-}
-
 .top-link {
   background:  #4fc08d;
   color: #fff;

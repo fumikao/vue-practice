@@ -61,6 +61,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+input {
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+
 li {
   list-style: square;
   text-align: left;
